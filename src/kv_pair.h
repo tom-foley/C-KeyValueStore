@@ -10,7 +10,7 @@
 #endif
 
 #define MAX_KEY_LEN     30
-#define MAX_VAL_SIZE    100
+#define MAX_VAL_LEN    100
 
 struct kv_pair {
     char *key;
