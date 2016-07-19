@@ -1,6 +1,10 @@
 #ifndef _KV_PAIR_H
 #define _KV_PAIR_H
 
+#ifndef _STDIO_H
+#include <stdio.h>
+#endif
+
 #ifndef _STDLIB_H
 #include <stdlib.h>
 #endif
@@ -19,7 +23,18 @@ struct kv_pair {
     struct kv_pair *next;
 };
 
-struct kv_pair *init_kv_pair(char *, char *);
+
+/*
+ *  Allocates space for a new kv_pair
+ *  and sets appropriate length & kv_pair
+ *  node values
+ */
+struct kv_pair *init_kv_pair(const char *, const char *);
+
+
+/*
+ *  Frees all memory held by specified kv_pair
+ */
 void dispose_kv_pair(struct kv_pair *);
 
 #endif

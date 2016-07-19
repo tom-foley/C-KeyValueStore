@@ -1,7 +1,7 @@
 #include "kv_pair.h"
 
 
-struct kv_pair *init_kv_pair(char *key, char *value) {
+struct kv_pair *init_kv_pair(const char *key, const char *value) {
     struct kv_pair *pair = (struct kv_pair *)malloc(sizeof(struct kv_pair));
 
     size_t key_len = strnlen(key, MAX_KEY_LEN) + sizeof(char);
