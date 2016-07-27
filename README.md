@@ -1,4 +1,4 @@
-## C-KeyValueStore
+## CKeyValueStore
 A C library which implements a standard key value store(dictionary) data type. 
 
 ### Current Functionality
