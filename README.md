@@ -1,8 +1,8 @@
-## KeyValuePairC
+## C-KeyValueStore
 A C library which implements a standard key value store(dictionary) data type. 
 
 ### Current Functionality
-* creating `kv_pair`'s
+* creating `kv_pair`'s and `kv_store`'s to store them
 * adding `kv_pair`'s to `kv_store`
 * searching the dictionary to see if `kv_pair`'s exist
 * searching the dictionary to get the value of a specific `kv_pair` based on the key
